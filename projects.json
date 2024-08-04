@@ -3,18 +3,18 @@
     "title": "Project 1",
     "description": "Description of project 1",
     "image": "project1.jpg",
-    "link": "#"
+    "link": "www.hertzwell.com"
   },
   {
     "title": "Project 2",
     "description": "Description of project 2",
     "image": "project2.jpg",
-    "link": "#"
+    "link": "www.hertzwell.com"
   },
   {
     "title": "Project 3",
     "description": "Description of project 3",
     "image": "project3.jpg",
-    "link": "#"
+    "link": "www.hertzwell.com"
   }
 ]

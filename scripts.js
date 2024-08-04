@@ -22,24 +22,24 @@ window.addEventListener('scroll', function() {
 
 // Project data
 const projects = [
-  {
-    "title": "Project 1",
-    "description": "Description of project 1",
-    "image": "project1.jpg",
-    "link": "#"
-  },
-  {
-    "title": "Project 2",
-    "description": "Description of project 2",
-    "image": "project2.jpg",
-    "link": "#"
-  },
-  {
-    "title": "Project 3",
-    "description": "Description of project 3",
-    "image": "project3.jpg",
-    "link": "#"
-  }
+    {
+        "title": "AI-Powered Radar System",
+        "description": "Developed an advanced radar system using AI for enhanced object detection and tracking.",
+        "image": "project1.jpg",
+        "link": "#"
+    },
+    {
+        "title": "Autonomous Drone Navigation",
+        "description": "Created a system for autonomous drone navigation in complex urban environments.",
+        "image": "project2.jpg",
+        "link": "#"
+    },
+    {
+        "title": "Robotics in Healthcare",
+        "description": "Implemented robotic solutions for assisting in medical procedures and patient care.",
+        "image": "project3.jpg",
+        "link": "#"
+    }
 ];
 
 // Load projects
@@ -58,32 +58,32 @@ projects.forEach(project => {
 
 // Blog post data
 const blogPosts = [
-  {
-    "title": "Blog Post 1",
-    "date": "August 1, 2024",
-    "category": "AI",
-    "summary": "Summary of blog post 1",
-    "link": "#"
-  },
-  {
-    "title": "Blog Post 2",
-    "date": "July 15, 2024",
-    "category": "Robotics",
-    "summary": "Summary of blog post 2",
-    "link": "#"
-  },
-  {
-    "title": "Blog Post 3",
-    "date": "July 1, 2024",
-    "category": "Technology",
-    "summary": "Summary of blog post 3",
-    "link": "#"
-  }
+    {
+        "title": "The Future of AI in Robotics",
+        "date": "August 1, 2024",
+        "category": "AI",
+        "summary": "Exploring the latest trends and future prospects of AI integration in robotics.",
+        "link": "#"
+    },
+    {
+        "title": "Advancements in Radar Technology",
+        "date": "July 15, 2024",
+        "category": "Technology",
+        "summary": "Discussing recent breakthroughs in radar technology and their applications.",
+        "link": "#"
+    },
+    {
+        "title": "Ethics in AI Development",
+        "date": "July 1, 2024",
+        "category": "AI Ethics",
+        "summary": "Addressing the ethical considerations in AI development and implementation.",
+        "link": "#"
+    }
 ];
 
 // Load blog posts
 const blogGrid = document.getElementById('blog-grid');
-blogPosts.slice(0, 3).forEach(post => {
+blogPosts.forEach(post => {
     const postElement = document.createElement('article');
     postElement.className = 'blog-post';
     postElement.innerHTML = `

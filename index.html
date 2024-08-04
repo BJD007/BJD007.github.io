@@ -3,31 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhaskar Jyoti Dutta</title>
+    <title>Bhaskar Jyoti Dutta - Personal Branding</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><button id="toggle-dark-mode">Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div>
+            <h1>Bhaskar Jyoti Dutta</h1>
+            <p>Empowering Innovation Through AI and Robotics</p>
+            <a href="#biography" class="cta-button">Learn More</a>
+        </div>
     </header>
-    <main>
-        <section class="hero">
-            <img src="images/hero-image.jpg" alt="Bhaskar Jyoti Dutta" class="hero-image">
-            <h1>Welcome to Bhaskar Jyoti Dutta's Den</h1>
-            <p>Innovative AI and Robotics Leader</p>
-            <a href="contact.html" class="cta-button">Get in Touch</a>
-        </section>
-    </main>
+
+    <section class="biography" id="biography">
+        <h2 class="section-title">Biography</h2>
+        <div class="bio-content">
+            <img src="bhaskar.jpg" alt="Bhaskar Jyoti Dutta" class="bio-image">
+            <p>Bhaskar Jyoti Dutta is a dynamic leader in the fields of artificial intelligence and robotics, renowned for his innovative contributions to autonomous systems and radar technology. As the Co-founder and CTO of Hertzwell, Bhaskar has successfully led the development of cutting-edge AI solutions, focusing on enhancing object detection and perception through advanced radar signal processing and deep learning algorithms.</p>
+            <p>With a strong educational background, including a Master's degree in Mechatronics from the National University of Singapore and ongoing PhD studies in Artificial Intelligence, Bhaskar combines technical expertise with practical experience. He has held pivotal roles in various organizations, including Infinium Robotics, where he was instrumental in delivering groundbreaking projects such as the world's first UAS Autonomous Waiter.</p>
+            <p>Bhaskar's interests extend beyond technology; he is passionate about fitness, classical music, and content creation. He actively engages in cycling, swimming, and drumming, and enjoys sharing insights through social media and platforms like YouTube and Medium.</p>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <h2 class="section-title">My Work</h2>
+        <div id="work-grid" class="work-grid"></div>
+    </section>
+
+    <section class="blog" id="blog">
+        <h2 class="section-title">Blog</h2>
+        <div id="blog-grid" class="blog-grid"></div>
+        <a href="#" class="view-all-posts cta-button">View All Posts</a>
+    </section>
+
+    <section class="interests" id="interests">
+        <h2 class="section-title">Interests & Hobbies</h2>
+        <div class="interests-grid">
+            <div class="interest-item" style="background-image: url('fitness.jpg');">
+                <h3>Fitness</h3>
+                <p>Dedicated to maintaining a healthy lifestyle through various fitness activities.</p>
+            </div>
+            <div class="interest-item" style="background-image: url('swimming.jpg');">
+                <h3>Swimming</h3>
+                <p>Passionate about swimming and participating in aquatic events.</p>
+            </div>
+            <div class="interest-item" style="background-image: url('travel.jpg');">
+                <h3>Traveling</h3>
+                <p>Exploring new cultures and places around the world.</p>
+            </div>
+            <div class="interest-item" style="background-image: url('drumming.jpg');">
+                <h3>Drumming</h3>
+                <p>Expressing creativity through rhythm and music.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Bhaskar Jyoti Dutta. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

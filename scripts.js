@@ -52,24 +52,24 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     // Load projects
-    const workGrid = document.getElementById('work-grid');
-    if (workGrid) {
-        console.log("Work grid found");
+    const projectsGrid = document.getElementById('projects-grid');
+    if (projectsGrid) {
+        console.log("Projects grid found");
         projects.forEach(project => {
             const projectElement = document.createElement('div');
-            projectElement.className = 'work-item';
+            projectElement.className = 'projects-item';
             projectElement.innerHTML = `
-                <img src="${project.image}" alt="${project.title}" class="work-item-image">
-                <div class="work-item-content">
+                <img src="${project.image}" alt="${project.title}" class="projects-item-image">
+                <div class="projects-item-content">
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                     <a href="${project.link}" class="cta-button">Learn More</a>
                 </div>
             `;
-            workGrid.appendChild(projectElement);
+            projectsGrid.appendChild(projectElement);
         });
     } else {
-        console.error("Work grid not found");
+        console.error("Projects grid not found");
     }
 
     // Blog post data

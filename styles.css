@@ -106,7 +106,7 @@ body.dark-mode {
     text-align: center;
 }
 
-.biography, .work, .blog, .interests {
+.biography, .projects, .blogs, .hobbies {
     padding: 100px 20px;
 }
 
@@ -125,13 +125,13 @@ body.dark-mode {
     object-fit: cover;
 }
 
-.work-grid, .blog-grid {
+.projects-grid, .blog-grid, .hobbies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.work-item, .blog-post {
+.projects-item, .blog-post, .hobby-item {
     background: var(--secondary-background);
     border-radius: 10px;
     overflow: hidden;
@@ -141,46 +141,39 @@ body.dark-mode {
     flex-direction: column;
 }
 
-.work-item:hover, .blog-post:hover {
+.projects-item:hover, .blog-post:hover, .hobby-item:hover {
     transform: translateY(-5px);
 }
 
-.work-item-image {
+.projects-item-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.work-item-content, .blog-post-content {
+.projects-item-content, .blog-post-content {
     padding: 20px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-.work-item h3, .blog-post h3 {
+.projects-item h3, .blog-post h3, .hobby-item h3 {
     margin-top: 0;
     font-size: 1.2rem;
 }
 
-.work-item p, .blog-post p {
+.projects-item p, .blog-post p, .hobby-item p {
     flex-grow: 1;
     margin-bottom: 15px;
 }
 
-.work-item .cta-button, .blog-post .cta-button {
+.projects-item .cta-button, .blog-post .cta-button {
     align-self: flex-start;
 }
 
-.interests-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.interest-item {
+.hobby-item {
     height: 250px;
-    border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -188,30 +181,10 @@ body.dark-mode {
     color: white;
     background-size: cover;
     background-position: center;
-    transition: transform 0.3s;
     position: relative;
 }
 
-.interest-item:hover {
-    transform: scale(1.05);
-}
-
-.interest-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.interest-item p {
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.interest-item:hover p {
-    opacity: 1;
-}
-
-.interest-item::before {
+.hobby-item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -223,9 +196,19 @@ body.dark-mode {
     z-index: 1;
 }
 
-.interest-item h3, .interest-item p {
+.hobby-item h3, .hobby-item p {
     position: relative;
     z-index: 2;
+}
+
+.hobby-item p {
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hobby-item:hover p {
+    opacity: 1;
 }
 
 .center-button {

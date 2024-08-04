@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f8d74e; /* Gold color */
+}
+
+header {
+    background-color: #000;
+    color: #f8d74e;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #f8d74e;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f8d74e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(to right, #000, #333);
+    color: #f8d74e;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cta-button {
+    background-color: #f8d74e;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+.about, .experience, .projects, .contact {
+    background-color: #111; /* Dark background for sections */
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.about-image, .experience-image, .projects-image, .contact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+h1 {
+    color: #f8d74e;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #000;
+    color: #f8d74e;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

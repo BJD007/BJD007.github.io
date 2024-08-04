@@ -1,12 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #4A90E2;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -25,15 +26,34 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-main {
-    padding: 2rem;
+    font-weight: bold;
 }
 
 .hero {
     text-align: center;
-    padding: 2rem 0;
+    padding: 4rem 0;
+    background: linear-gradient(to right, #4A90E2, #9013FE);
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.cta-button {
+    background-color: #FF6F61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
 }
 
 .about, .experience, .projects, .contact {
@@ -44,8 +64,15 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.about-image, .experience-image, .projects-image, .contact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
 h1 {
-    color: #333;
+    color: #4A90E2;
 }
 
 footer {
@@ -53,7 +80,7 @@ footer {
     padding: 1rem 0;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }

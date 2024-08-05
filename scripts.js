@@ -115,4 +115,88 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error("Blog grid not found");
     }
+
+    // Timeline data
+    const timelineEvents = [
+        {
+            year: "2007",
+            title: "Started Bachelor's Degrees",
+            description: "Began my journey in Mechanical Engineering at Vellore Institue of Technology."
+        },
+        {
+            year: "2008",
+            title: "Started Double Bachelor's Degrees",
+            description: "Began my journey in Information Technology at Vellore Institue of Technology."
+        },
+        {
+            year: "2011",
+            title: "Graduated in Bachelor of Technology Mechanical Engineering",
+            description: "Completed my Bachelor's degree with a focus on AI and Machine Learning."
+        },
+        {
+            year: "2011",
+            title: "Graduated in Bachelor of Technology Information Techology",
+            description: "Completed my Bachelor's degree with a focus on AI and Machine Learning."
+        },
+        {
+            year: "2011",
+            title: " Campus Placement in TATA Technologies",
+            description: " GET to Application Engineer"
+        },
+        {
+            year: "2012",
+            title: " Started working for Chryler LLC",
+            description: " Application Engineer."
+        },
+        {
+            year: "2013",
+            title: "Started Master's Degrees",
+            description: "Began my journey in Mechanical Engineering at Vellore Institue of Technology."
+        },
+        {
+            year: "2014",
+            title: "Graduared Master's Degree",
+            description: "Earned my Master's in Mechatronics from the National University of Singapore."
+        },
+        {
+            year: "October 2017",
+            title: "Co-founded Hertzwell",
+            description: "Started my journey as an entrepreneur, focusing on AI and radar technology."
+        },
+        {
+            year: "2022",
+            title: "Major Project Success",
+            description: "Led the development of an AI-powered radar system, marking a significant milestone in my career."
+        },
+        {
+            year: "2023",
+            title: " Started my PhD Journey from Bircham International University",
+            description: "Ongoing"
+        },
+        {
+            year: "2024",
+            title: " Hertzwell becomes World Number 1 in Object Detection Model for AV Application. ",
+            description: " Still is the Leader in NuScenes leaderboard "
+        }
+    ];
+
+    // Load timeline events
+    const timelineContainer = document.querySelector('.timeline-container');
+    if (timelineContainer) {
+        console.log("Timeline container found");
+        timelineEvents.forEach(event => {
+            const timelineItem = document.createElement('div');
+            timelineItem.className = 'timeline-item';
+            timelineItem.innerHTML = `
+                <div class="timeline-content">
+                    <h3 class="date">${event.year}</h3>
+                    <h4>${event.title}</h4>
+                    <p>${event.description}</p>
+                </div>
+            `;
+            timelineContainer.appendChild(timelineItem);
+        });
+    } else {
+        console.error("Timeline container not found");
+    }
 });

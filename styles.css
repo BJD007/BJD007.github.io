@@ -3,6 +3,7 @@
     --text-color: #333333;
     --background-color: #ffffff;
     --secondary-background: #f5f5f7;
+    --hobby-background: #e0f7fa;
 }
 
 body {
@@ -19,6 +20,7 @@ body.dark-mode {
     --text-color: #ffffff;
     --background-color: #121212;
     --secondary-background: #1e1e1e;
+    --hobby-background: #37474f;
 }
 
 .nav {
@@ -145,13 +147,13 @@ body.dark-mode {
     transform: translateY(-5px);
 }
 
-.projects-item-image {
+.projects-item-image, .blog-post-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.projects-item-content, .blog-post-content {
+.projects-item-content, .blog-post-content, .hobby-item-content {
     padding: 20px;
     flex-grow: 1;
     display: flex;
@@ -168,17 +170,18 @@ body.dark-mode {
     margin-bottom: 15px;
 }
 
-.projects-item .cta-button, .blog-post .cta-button {
+.projects-item .cta-button, .blog-post .cta-button, .hobby-item .cta-button {
     align-self: flex-start;
 }
 
 .hobby-item {
-    height: 250px;
+    background: var(--hobby-background);
+    height: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    color: white;
+    justify-content: flex-start;
+    color: var(--text-color);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -196,19 +199,9 @@ body.dark-mode {
     z-index: 1;
 }
 
-.hobby-item h3, .hobby-item p {
+.hobby-item h3, .hobby-item p, .hobby-item .cta-button {
     position: relative;
     z-index: 2;
-}
-
-.hobby-item p {
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.hobby-item:hover p {
-    opacity: 1;
 }
 
 .center-button {

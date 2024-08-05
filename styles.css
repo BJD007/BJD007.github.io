@@ -215,7 +215,7 @@ body.dark-mode {
 /* Timeline styles */
 .timeline {
     background-color: var(--secondary-background);
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .timeline-container {
@@ -336,14 +336,19 @@ footer {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
+        left: 0;
     }
 
     .timeline-item::after {
         left: 15px;
     }
 
-    .timeline-item:nth-child(even) {
-        left: 0%;
+    .timeline-item:nth-child(even)::after {
+        left: 15px;
+    }
+
+    .timeline-content {
+        padding: 15px 20px;
     }
 
     .cta-button {
@@ -368,5 +373,21 @@ footer {
 
     .biography, .projects, .blogs, .timeline, .hobbies {
         padding: 50px 10px; /* Reduced padding for very small screens */
+    }
+
+    .timeline-container::after {
+        left: 21px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-item::after {
+        left: 5px;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: 5px;
     }
 }

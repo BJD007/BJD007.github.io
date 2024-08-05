@@ -14,6 +14,7 @@ body {
     background-color: var(--background-color);
     transition: background-color 0.3s, color 0.3s;
     line-height: 1.6;
+    font-size: 16px; /* Base font size */
 }
 
 body.dark-mode {
@@ -38,10 +39,11 @@ body.dark-mode {
     justify-content: center;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .nav li {
-    margin: 0 15px;
+    margin: 5px 10px; /* Reduced margin for mobile */
 }
 
 .nav a, .nav button {
@@ -50,6 +52,7 @@ body.dark-mode {
     font-size: 14px;
     font-weight: 300;
     transition: color 0.3s;
+    padding: 10px; /* Increase touch target size */
 }
 
 .nav a:hover, .nav button:hover {
@@ -290,29 +293,80 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly smaller base font size for mobile */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 5px 0;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
+
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
     .bio-image {
         float: none;
         margin: 0 auto 20px;
         display: block;
     }
+
+    .projects-grid, .blog-grid, .hobbies-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
     .timeline-container::after {
         left: 31px;
     }
+
     .timeline-item {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
+
     .timeline-item::after {
         left: 15px;
     }
+
     .timeline-item:nth-child(even) {
         left: 0%;
+    }
+
+    .cta-button {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .biography, .projects, .blogs, .timeline, .hobbies {
+        padding: 50px 10px; /* Reduced padding for very small screens */
     }
 }

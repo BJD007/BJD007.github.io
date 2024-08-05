@@ -141,66 +141,120 @@ document.addEventListener('DOMContentLoaded', function() {
     // Timeline data
     const timelineEvents = [
         {
-            year: "2007",
-            title: "Started Bachelor's Degrees",
-            description: "Began my journey in Mechanical Engineering at Vellore Institue of Technology."
+            year: "May 2005",
+            title: "Academic Excellence Award",
+            description: "Recognized by the Chief Minister of Assam, India, for outstanding academic performance during school years."
         },
         {
-            year: "2008",
-            title: "Started Double Bachelor's Degrees",
-            description: "Began my journey in Information Technology at Vellore Institue of Technology."
+            year: "July 2007",
+            title: "Embarked on Academic Excellence",
+            description: "Began a dual degree journey in Mechanical Engineering at the prestigious Vellore Institute of Technology."
         },
         {
-            year: "2011",
-            title: "Graduated in Bachelor of Technology Mechanical Engineering",
-            description: "Completed my Bachelor's degree with a focus on AI and Machine Learning."
+            year: "July 2008",
+            title: "Expanded Horizons with Dual Specialization",
+            description: "Started a second major in Information Technology at Vellore Institute of Technology."
         },
         {
-            year: "2011",
-            title: "Graduated in Bachelor of Technology Information Techology",
-            description: "Completed my Bachelor's degree with a focus on AI and Machine Learning."
+            year: "December 2008",
+            title: "Cent Percent Attendance Award",
+            description: "Won this pretigious and priced award for 100% attendence in the Academic Year"
+        },
+        {   year: "June 2009",
+            title: "Internship at Worth Trust",
+            description: "Gained hands-on experience in social work and community service, contributing to various projects aimed at empowering underprivileged individuals."
+        },
+
+        {
+            year: "May 2009",
+            title: "Best Hardware Project Award by Vellore Institute of Technology",
+            description: "Awarded for innovative project work during undergraduate studies."
         },
         {
-            year: "2011",
-            title: " Campus Placement in TATA Technologies",
-            description: " GET to Application Engineer"
+            year: "July 2010",
+            title: "Internship at NTTF",
+            description: "Acquired practical skills in technical training and development, focusing on engineering and technology education."
         },
         {
-            year: "2012",
-            title: " Started working for Chryler LLC",
-            description: " Application Engineer."
+            year: "December 2010",
+            title: "Internship at Oil India Limited",
+            description: "Worked on engineering projects in the oil and gas sector, gaining insights into industrial operations and management."
         },
         {
-            year: "2013",
-            title: "Started Master's Degrees",
-            description: "Began my journey in Mechanical Engineering at Vellore Institue of Technology."
+            year: "June 2011",
+            title: "Milestone Achievement: Mechanical Engineering",
+            description: "Successfully completed Bachelor of Technology in Mechanical Engineering, laying the foundation for a career in innovation."
         },
         {
-            year: "2014",
-            title: "Graduared Master's Degree",
-            description: "Earned my Master's in Mechatronics from the National University of Singapore."
+            year: "August 2011",
+            title: "Double Success: Information Technology Degree",
+            description: "Graduated with a Bachelor of Technology in Information Technology, equipping myself with a unique blend of mechanical and digital expertise."
+        },
+        {
+            year: "August 2011",
+            title: "First Career Step: TATA Technologies",
+            description: "Secured a position as Graduate Engineer Trainee, quickly advancing to Application Engineer at the renowned TATA Technologies."
+        },
+        {
+            year: "July 2012",
+            title: "Distinguished Employee Recognition Award by TATA",
+            description: "Received for exemplary work and dedication to projects at TATA Technologies."
+        },
+
+        {
+            year: "August 2012",
+            title: "Global Exposure: Chrysler LLC",
+            description: "Joined Chrysler LLC as an Application Engineer, diving into the heart of automotive innovation."
+        },
+        {
+            year: "June 2013",
+            title: "Fiat Chrysler Spotlight Award",
+            description: "Honored for exceptional performance and contributions during my tenure at Chrysler."
+        },
+        {
+            year: "August 2013",
+            title: "Advanced Studies: Master's Degree",
+            description: "Elevated my expertise by pursuing a Master's in Mechatronics at the National University of Singapore."
+        },
+        {
+            year: "October 2014",
+            title: "Master's Degree Accomplished",
+            description: "Graduated with distinction in Mechatronics from NUS, bridging the gap between mechanical systems and cutting-edge technology."
+        },
+        {
+            year: "October 2014",
+            title: "Robotics Pioneer: Infinium Robotics",
+            description: "Embarked on a transformative journey in robotics, contributing to groundbreaking projects at Infinium Robotics."
+        },
+        {
+            year: "November 2016",
+            title: "Extraordinary Performance Recognition at Infinium Robotics",
+            description: "Awarded for outstanding contributions to the company’s innovative projects."
         },
         {
             year: "October 2017",
-            title: "Co-founded Hertzwell",
-            description: "Started my journey as an entrepreneur, focusing on AI and radar technology."
+            title: "Entrepreneurial Leap: Co-founded Hertzwell",
+            description: "Took the bold step of co-founding Hertzwell, focusing on revolutionary AI and radar technology for autonomous systems."
         },
         {
-            year: "Jan 2021",
-            title: "Major Project Success",
-            description: "Hertzwell becomes revenue generating venture"
+            year: "January 2021",
+            title: "Breakthrough: Hertzwell's Commercial Success",
+            description: "Led Hertzwell to become a revenue-generating venture, marking a significant milestone in the company's growth."
         },
         {
-            year: "2023",
-            title: " Started my PhD Journey from Bircham International University",
-            description: "Ongoing"
+            year: "January 2023",
+            title: "Pursuing the Pinnacle: Doctoral Studies",
+            description: "Commenced PhD in Artificial Intelligence at Bircham International University, pushing the boundaries of AI research."
         },
         {
-            year: "2024",
-            title: " Hertzwell becomes World Number 1 in Object Detection Model for AV Application. ",
-            description: " Still is the Leader in NuScenes leaderboard "
+            year: "March 2024",
+            title: "Global Recognition: World No. 1 in AV Object Detection",
+            description: "Hertzwell achieved world leadership in the NuScenes leaderboard for Object Detection in Autonomous Vehicles, solidifying its position at the forefront of AI technology."
         }
+
+
     ];
+    
 
     // Load timeline events
     const timelineContainer = document.querySelector('.timeline-container');

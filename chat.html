@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Me</title>
+    <style>
+        #chat-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+            flex-direction: column;
+        }
+        #chat-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #chat-messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        #chat-input {
+            display: flex;
+            padding: 10px;
+        }
+        #chat-input input {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+        #chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-popup">
+        <div id="chat-header">Chat with Me</div>
+        <div id="chat-messages"></div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <button id="chat-button" onclick="toggleChat()">Chat</button>
+
+    <script>
+        function toggleChat() {
+            var chatPopup = document.getElementById('chat-popup');
+            chatPopup.style.display = chatPopup.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        function sendMessage() {
+            var input = document.getElementById('user-input');
+            var message = input.value.trim();
+            if (message) {
+                addMessage('You', message);
+                input.value = '';
+                // Simulate a response (replace with actual chat functionality)
+                setTimeout(() => addMessage('Bot', 'Thank you for your message. I will get back to you soon.'), 1000);
+            }
+        }
+
+        function addMessage(sender, text) {
+            var messagesDiv = document.getElementById('chat-messages');
+            messagesDiv.innerHTML += '<p><strong>' + sender + ':</strong> ' + text + '</p>';
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    </script>
+</body>
+</html>

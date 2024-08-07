@@ -391,3 +391,20 @@ footer {
         left: 5px;
     }
 }
+
+
+.visitor-counter {
+    padding: 50px 20px;
+    background-color: var(--secondary-background);
+    text-align: center;
+}
+
+.visitor-counter .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.visitor-count {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}

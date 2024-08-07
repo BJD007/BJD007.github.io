@@ -37,6 +37,7 @@ body.dark-mode {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center; /* Add this line to vertically align items */
     padding: 0;
     margin: 0;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
@@ -53,16 +54,14 @@ body.dark-mode {
     font-weight: 300;
     transition: color 0.3s;
     padding: 10px; /* Increase touch target size */
+    background: none; /* Add this line */
+    border: none; /* Add this line */
+    cursor: pointer; /* Add this line */
+    font-family: 'Poppins', sans-serif; /* Add this line to match the font */
 }
 
 .nav a:hover, .nav button:hover {
     color: var(--primary-color);
-}
-
-.nav button {
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 
 .hero {

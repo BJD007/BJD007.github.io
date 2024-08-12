@@ -301,6 +301,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "description": "Passionate about learning new languages and exploring different cultures.",
             "image": "images/languagelearning.svg",
             "blogLink": "hobbies/language_learning_blog.html"
+        },
+        {
+            "title": "Competitions",
+            "description": "Participated Competitions and Currently ongoing ones.",
+            "image": "images/competition.jpg",
+            "blogLink": "hobbies/competition.html"
         }
     ];
 

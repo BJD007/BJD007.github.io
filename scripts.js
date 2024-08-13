@@ -200,7 +200,6 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Distinguished Employee Recognition Award by TATA",
             description: "Received for exemplary work and dedication to projects at TATA Technologies."
         },
-
         {
             year: "August 2012",
             title: "Global Exposure: Chrysler LLC",
@@ -237,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Took the bold step of co-founding Hertzwell, focusing on revolutionary AI and radar technology for autonomous systems."
         },
         {
-            year: "January 2021",
+            year: "January 2019",
             title: "Breakthrough: Hertzwell's Commercial Success",
             description: "Led Hertzwell to become a revenue-generating venture, marking a significant milestone in the company's growth."
         },

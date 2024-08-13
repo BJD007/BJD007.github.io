@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "title": "Publications",
             "date": "Updated as of 2023",
             "category": "Publications",
-            "summary": "Discover my latest contributions to IEEE, where cutting-edge research meets real-world impact. These publications showcase my work in pushing the boundaries of AI, ML, and radar technologies, reflecting a deep commitment to innovation and excellence.",
-            "image": "images/IEEE.jpg",
+            "summary": "Discover my latest contributions to various profession organizations, where cutting-edge research meets real-world impact. These publications showcase my work in pushing the boundaries of AI, ML, and radar technologies, reflecting a deep commitment to innovation and excellence.",
+            "image": "images/publications.jpeg",
             "pdfLink": "https://www.linkedin.com/in/bhaskarjdutta/details/publications/"
         },
         {
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "category": "Conferences",
             "summary": "Explore my featured presentations from leading conferences, where I share groundbreaking insights into computer vision and robotics. This section highlights key moments from global platforms, showcasing my role in driving forward the next generation of intelligent systems.",
             "image": "images/conferences.jpg",
-            "pdfLink": "https://www.conference-website.com/presentation"
+            "pdfLink": "hobbies/conferences.html"
         },
         {
             "title": "Patents",
@@ -290,13 +290,13 @@ document.addEventListener('DOMContentLoaded', function() {
             "title": "Traveling",
             "description": "Exploring new cultures and places around the world.",
             "image": "images/travel.jpg",
-            "blogLink": "https://www.instagram.com/bhaskar.j.dutta?igsh=aXdxdDFqY3VydGxx&utm_source=qr"
+            "blogLink": "hobbies/traveling_blog.html"
         },
         {
             "title": "Music",
             "description": "Expressing creativity through rhythm and music.",
             "image": "images/drumming.jpg",
-            "blogLink": "https://www.instagram.com/stories/highlights/17977459853149948/"
+            "blogLink": "hobbies/music_blog.html"
         },
         {
             "title": "Language Learning",

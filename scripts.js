@@ -306,6 +306,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "description": "Participated Competitions and Currently ongoing ones.",
             "image": "images/competition.jpg",
             "blogLink": "hobbies/competition.html"
+        },
+        {
+            "title": "Conferences/Talks/Events/Podcasts",
+            "description": "Participated and to be participating ones",
+            "image": "images/conferences.png",
+            "blogLink": "hobbies/conferences.html"
         }
     ];
 

@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "title": "Kaggle Projects",
             "description": "Explore the high-impact projects I've tackled on Kaggle, where competition meets creativity, and data-driven solutions lead to real-world breakthroughs.",
             "image" : " images/kaggle.webp",
-            "pdfLink": "https://www.kaggle.com/competitions"
+            "pdfLink": "https://www.kaggle.com/bhaskarjyotidutta"
         },
         {
             "title": "LinkedIn Projects",

@@ -32,22 +32,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project data
     const projects = [
         {
-            "title": "AI-Powered Radar System",
-            "description": "Developed an advanced radar system using AI for enhanced object detection and tracking.",
-            "image": "images/project1.jpg",
-            "pdfLink": "pdfs/ai_radar_system.pdf"
+            "title": "GitHub Projects",
+            "description": "Uncover the cutting-edge projects hosted on my GitHub, where I bring ideas to life through code and collaboration, demonstrating expertise in AI, ML, and beyond.",
+            "image" : " images/github.avif",
+            //"pdfLink": "pdfs/ai_radar_system.pdf"
+            "pdfLink": "https://github.com/BJD007?tab=repositories"
         },
         {
-            "title": "Autonomous Drone Navigation",
-            "description": "Created a system for autonomous drone navigation in complex urban environments.",
-            "image": "images/project2.jpg",
-            "pdfLink": "pdfs/drone_navigation.pdf"
+            "title": "Kaggle Projects",
+            "description": "Explore the high-impact projects I've tackled on Kaggle, where competition meets creativity, and data-driven solutions lead to real-world breakthroughs.",
+            "image" : " images/kaggle.webp",
+            "pdfLink": "https://www.kaggle.com/competitions"
         },
         {
-            "title": "Robotics in Healthcare",
-            "description": "Implemented robotic solutions for assisting in medical procedures and patient care.",
-            "image": "images/project3.jpg",
-            "pdfLink": "pdfs/healthcare_robotics.pdf"
+            "title": "LinkedIn Projects",
+            "description": "Dive into the innovative projects showcased in my LinkedIn profile, where each endeavor reflects my commitment to pushing boundaries and achieving excellence.",
+            "image" : " images/linked.webp",
+            "pdfLink": "https://www.linkedin.com/in/bhaskarjdutta/details/projects/"
         }
     ];
 
@@ -83,29 +84,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Blog post data
     const blogPosts = [
         {
-            "title": "The Future of AI in Robotics",
-            "date": "August 1, 2024",
-            "category": "AI",
-            "summary": "Exploring the latest trends and future prospects of AI integration in robotics.",
-            "image": "images/futureofaiinrobotics.png",
-            "pdfLink": "pdfs/ai_robotics_future.pdf"
+            "title": "Publications",
+            "date": "Updated as of 2023",
+            "category": "Publications",
+            "summary": "Discover my latest contributions to IEEE, where cutting-edge research meets real-world impact. These publications showcase my work in pushing the boundaries of AI, ML, and radar technologies, reflecting a deep commitment to innovation and excellence.",
+            "image": "images/IEEE.jpg",
+            "pdfLink": "https://www.linkedin.com/in/bhaskarjdutta/details/publications/"
         },
         {
-            "title": "Advancements in Radar Technology",
-            "date": "July 15, 2024",
-            "category": "Technology",
-            "summary": "Discussing recent breakthroughs in radar technology and their applications.",
-            "image": "images/advnacement.jpg",
-            "pdfLink": "pdfs/radar_tech_advancements.pdf"
+            "title": "Conferences",
+            "date": "Updated as of 2023",
+            "category": "Conferences",
+            "summary": "Explore my featured presentations from leading conferences, where I share groundbreaking insights into computer vision and robotics. This section highlights key moments from global platforms, showcasing my role in driving forward the next generation of intelligent systems.",
+            "image": "images/conferences.jpg",
+            "pdfLink": "https://www.conference-website.com/presentation"
         },
         {
-            "title": "Ethics in AI Development",
-            "date": "July 1, 2024",
-            "category": "AI Ethics",
-            "summary": "Addressing the ethical considerations in AI development and implementation.",
-            "image": "images/ethicsinai.jpeg",
-            "pdfLink": "pdfs/ai_ethics.pdf"
+            "title": "Patents",
+            "date": "Updated as of 2022",
+            "category": "Patents",
+            "summary": "Learn about my patented innovations that are revolutionizing the automotive industry. This patent introduces a new approach to radar technology, offering unparalleled accuracy and efficiency, and setting a new standard for safety and performance in modern vehicles.",
+            "image": "images/patents.jpeg",
+            "pdfLink": "https://ppubs.uspto.gov/pubwebapp/ ",
+            "pdfLink" : "https://patentscope.wipo.int/search/en/search.jsf"
         }
+        
     ];
 
     // Function to load blog posts
@@ -122,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h3>${post.title}</h3>
                         <p class="post-meta">${post.date} | ${post.category}</p>
                         <p>${post.summary}</p>
-                        <a href="${post.pdfLink}" class="cta-button" target="_blank">Read Full Post</a>
+                        <a href="${post.pdfLink}" class="cta-button" target="_blank"> Dive-in</a>
                     </div>
                 `;
                 blogGrid.appendChild(postElement);
@@ -281,38 +284,27 @@ document.addEventListener('DOMContentLoaded', function() {
             "title": "Fitness",
             "description": "Dedicated to maintaining a healthy lifestyle through various fitness activities.",
             "image": "images/wellbeing.jpg",
-            "blogLink": "hobbies/fitness_blog.html"
+            "blogLink": "https://www.fitbit.com/user/9GZ5NC"
         },
         {
             "title": "Traveling",
             "description": "Exploring new cultures and places around the world.",
             "image": "images/travel.jpg",
-            "blogLink": "hobbies/traveling_blog.html"
+            "blogLink": "https://www.instagram.com/bhaskar.j.dutta?igsh=aXdxdDFqY3VydGxx&utm_source=qr"
         },
         {
             "title": "Music",
             "description": "Expressing creativity through rhythm and music.",
             "image": "images/drumming.jpg",
-            "blogLink": "hobbies/music_blog.html"
+            "blogLink": "https://www.instagram.com/stories/highlights/17977459853149948/"
         },
         {
             "title": "Language Learning",
             "description": "Passionate about learning new languages and exploring different cultures.",
             "image": "images/languagelearning.svg",
-            "blogLink": "hobbies/language_learning_blog.html"
-        },
-        {
-            "title": "Competitions",
-            "description": "Participated Competitions and Currently ongoing ones.",
-            "image": "images/competition.jpg",
-            "blogLink": "hobbies/competition.html"
-        },
-        {
-            "title": "Conferences/Talks/Events/Podcasts",
-            "description": "Participated and to be participating ones",
-            "image": "images/conferences.png",
-            "blogLink": "hobbies/conferences.html"
+            "blogLink": "https://www.duolingo.com/profile/Polyglot_007"
         }
+
     ];
 
     // Load hobbies
@@ -327,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="hobby-item-content">
                     <h3>${hobby.title}</h3>
                     <p>${hobby.description}</p>
-                    <a href="${hobby.blogLink}" class="cta-button">Read Blog</a>
+                    <a href="${hobby.blogLink}" class="cta-button">Explore</a>
                 </div>
             `;
             hobbiesGrid.appendChild(hobbyElement);

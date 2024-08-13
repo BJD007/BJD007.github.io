@@ -303,6 +303,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "description": "Passionate about learning new languages and exploring different cultures.",
             "image": "images/languagelearning.svg",
             "blogLink": "https://www.duolingo.com/profile/Polyglot_007"
+        },
+        {
+            "title": "Book Reading",
+            "description": "Passionate about reading everything under the sun",
+            "image": "images/book-reading.jpg",
+            "blogLink": "https://www.goodreads.com/user/show/168320684-bhaskar-jyoti"
         }
 
     ];

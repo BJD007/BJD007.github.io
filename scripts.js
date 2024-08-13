@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             "title": "Polyglot in Progress: The Linguistic Odyssey",
             "description": "Breaking barriers and building bridges, one language at a time",
-            "image": "images/languagelearning.svg",
+            "image": "images/polyglot.jpg",
             "blogLink": "https://www.duolingo.com/profile/Polyglot_007"
         },
         {

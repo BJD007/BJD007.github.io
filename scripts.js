@@ -281,56 +281,60 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hobbies data
     const hobbies = [
         {
-            "title": "Fitness",
-            "description": "Dedicated to maintaining a healthy lifestyle through various fitness activities.",
+            "title": "Body Architect: Sculpting Wellness",
+            "description": "Transforming sweat into strength, one rep at a time",
             "image": "images/wellbeing.jpg",
             "blogLink": "https://www.fitbit.com/user/9GZ5NC"
         },
         {
-            "title": "Traveling",
-            "description": "Exploring new cultures and places around the world.",
+            "title": "Globe Trotter's Chronicles",
+            "description": "Collecting passport stamps and life-changing moments across continents",
             "image": "images/travel.jpg",
             "blogLink": "hobbies/traveling_blog.html"
         },
         {
-            "title": "Music",
-            "description": "Expressing creativity through rhythm and music.",
+            "title": "Sonic Alchemist",
+            "description": "Turning vibrations into emotions, crafting melodies that resonate with the soul",
             "image": "images/drumming.jpg",
             "blogLink": "hobbies/music_blog.html"
         },
         {
-            "title": "Language Learning",
-            "description": "Passionate about learning new languages and exploring different cultures.",
+            "title": "Polyglot in Progress: The Linguistic Odyssey",
+            "description": "Breaking barriers and building bridges, one language at a time",
             "image": "images/languagelearning.svg",
             "blogLink": "https://www.duolingo.com/profile/Polyglot_007"
         },
         {
-            "title": "Book Reading",
-            "description": "Passionate about reading everything under the sun",
+            "title": "Literary Voyager: A Biblio-Adventure",
+            "description": "Exploring worlds, one page at a time - from bestsellers to hidden gems",
             "image": "images/book-reading.jpg",
             "blogLink": "https://www.goodreads.com/user/show/168320684-bhaskar-jyoti"
         }
-
     ];
 
-    // Load hobbies
-    const hobbiesGrid = document.getElementById('hobbies-grid');
-    if (hobbiesGrid) {
-        console.log("Hobbies grid found");
-        hobbies.forEach(hobby => {
-            const hobbyElement = document.createElement('div');
-            hobbyElement.className = 'hobby-item';
-            hobbyElement.style.backgroundImage = `url('${hobby.image}')`;
-            hobbyElement.innerHTML = `
-                <div class="hobby-item-content">
-                    <h3>${hobby.title}</h3>
-                    <p>${hobby.description}</p>
-                    <a href="${hobby.blogLink}" class="cta-button">Explore</a>
-                </div>
-            `;
-            hobbiesGrid.appendChild(hobbyElement);
-        });
-    } else {
-        console.error("Hobbies grid not found");
+    // Function to load hobbies
+    function loadHobbies(containerId) {
+        const hobbiesGrid = document.getElementById(containerId);
+        if (hobbiesGrid) {
+            console.log(`Hobbies grid found: ${containerId}`);
+            hobbies.forEach(hobby => {
+                const hobbyElement = document.createElement('div');
+                hobbyElement.className = 'projects-item'; // Use the same class as projects
+                hobbyElement.innerHTML = `
+                    <img src="${hobby.image}" alt="${hobby.title}" class="projects-item-image">
+                    <div class="projects-item-content">
+                        <h3>${hobby.title}</h3>
+                        <p>${hobby.description}</p>
+                        <a href="${hobby.blogLink}" class="cta-button" target="_blank">Explore</a>
+                    </div>
+                `;
+                hobbiesGrid.appendChild(hobbyElement);
+            });
+        } else {
+            console.error(`Hobbies grid not found: ${containerId}`);
+        }
     }
+
+    // Load hobbies on main page
+    loadHobbies('hobbies-grid');
 });

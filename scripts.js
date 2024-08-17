@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
     // Change nav background on scroll
     window.addEventListener('scroll', function() {
         const nav = document.querySelector('.nav');

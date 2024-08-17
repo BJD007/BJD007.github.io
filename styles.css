@@ -441,3 +441,34 @@ footer {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.brands-section {
+    background-color: var(--secondary-background);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.brands-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.brands-container {
+    display: inline-block;
+    animation: scroll 20s linear infinite; /* Adjust the duration for speed */
+}
+
+.brand-logo {
+    height: 100px; /* Adjust the height as needed */
+    margin: 0 20px; /* Space between logos */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

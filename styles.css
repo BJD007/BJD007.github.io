@@ -37,7 +37,7 @@ body.dark-mode {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    align-items: center; /* Add this line to vertically align items */
+    align-items: center; /* Align items vertically */
     padding: 0;
     margin: 0;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
@@ -54,10 +54,10 @@ body.dark-mode {
     font-weight: 300;
     transition: color 0.3s;
     padding: 10px; /* Increase touch target size */
-    background: none; /* Add this line */
-    border: none; /* Add this line */
-    cursor: pointer; /* Add this line */
-    font-family: 'Poppins', sans-serif; /* Add this line to match the font */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    font-family: 'Poppins', sans-serif; /* Match font */
 }
 
 .nav a:hover, .nav button:hover {
@@ -110,7 +110,7 @@ body.dark-mode {
     text-align: center;
 }
 
-.biography, .projects, .blogs, .timeline, .hobbies {
+.biography, .projects, .blogs, .timeline, .hobbies, .call-for-speakers, .call-for-papers {
     padding: 100px 20px;
 }
 
@@ -370,7 +370,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    .biography, .projects, .blogs, .timeline, .hobbies {
+    .biography, .projects, .blogs, .timeline, .hobbies, .call-for-speakers, .call-for-papers {
         padding: 50px 10px; /* Reduced padding for very small screens */
     }
 

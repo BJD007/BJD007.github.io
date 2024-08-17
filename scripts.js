@@ -337,4 +337,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load hobbies on main page
     loadHobbies('hobbies-grid');
-});
+}
+);
+

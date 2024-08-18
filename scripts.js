@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "image" : " images/linked.webp",
             "pdfLink": "https://www.linkedin.com/in/bhaskarjdutta/details/projects/"
         }
+  
     ];
 
     // Function to load projects

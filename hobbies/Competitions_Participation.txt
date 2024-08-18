@@ -1,0 +1,79 @@
+Most active other than Kaggle
+
+https://numer.ai/
+
+
+https://www.drivendata.org/competitions/
+
+
+https://datahack.analyticsvidhya.com/contest/job-a-thon-january-2023/
+
+
+https://machinehack.com/hackathons
+
+
+https://tianchi.aliyun.com/competition/
+
+https://signate.jp/competitions/
+
+https://www.codabench.org/competitions/public/?page=1
+
+
+https://www.crunchdao.com/?ref=mlcontests#livecrunches
+
+
+
+https://www.datasource.ai/en/competition-slug
+
+
+https://grand-challenge.org/
+
+
+https://www.omdena.com/search?query=projects&focus=projects
+
+https://huggingface.co/competitions?ref=mlcontests
+
+https://www.topcoder.com/challenges?search=Data%20Science&tracks[DS]=true&tracks[Des]=true&tracks[Dev]=true&tracks[QA]=true&types[]=CH&types[]=F2F&types[]=MM&types[]=TSK
+
+
+https://dsworks.ru/en/champs
+
+https://thinkonward.com/app/c/challenges/
+
+https://waymo.com/open/challenges/?ref=mlcontests
+
+https://eval.ai/web/challenges/list
+
+https://signate.jp/?ref=mlcontests
+
+https://codalab.lisn.upsaclay.fr/competitions/?ref=mlcontests
+
+
+https://zindi.africa/competitions?ref=mlcontests
+
+
+https://www.aicrowd.com/challenges?ref=mlcontests
+
+
+https://www.wazokucrowd.com/
+
+https://devpost.com/hackathons
+
+
+
+
+Websites for Public Datasets
+
+    UC Irvine Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets.php
+    Amazon's AWS Datasets: https://registry.opendata.aws/
+    Google Dataset Search: https://toolbox.google.com/datasetsearch
+    US Government's Open Data: https://www.data.gov/
+    Kaggle Datasets (obviously ;) ): https://www.kaggle.com/datasets?tagids=14201
+https://open-meteo.com/
+
+
+ML Competitions live compilation
+
+https://mlcontests.com/#list
+
+

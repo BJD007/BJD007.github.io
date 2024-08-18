@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF2FREBMHR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-SF2FREBMHR');
-    </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Projects - Bhaskar Jyoti Dutta</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .nav {
+            /* Add your navigation styles here */
+        }
+
+        .projects {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .project-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .project-item:hover {
+            transform: scale(1.05);
+        }
+
+        .project-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-item h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #2980b9;
+        }
+
+        .project-item p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .project-item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .project-item a:hover {
+            background-color: #1a5276;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -23,9 +97,120 @@
 
     <main>
         <section class="projects" id="projects">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">All Projects</h2>
             <div id="all-projects-grid" class="projects-grid">
-                <!-- All project items will be dynamically added here -->
+                <div class="project-item">
+                    <h3>EVAL Projects</h3>
+                    <p>Dive into the innovative projects showcased in my EVAL AI profile, where each endeavor reflects my commitment to pushing boundaries and achieving excellence.</p>
+                    <img src="images/evalai-logo.png" alt="EVAL Logo">
+                    <a href="https://eval.ai/web/challenges/list" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Waymo Projects</h3>
+                    <p>Explore the innovative projects at Waymo, where we are redefining the future of autonomous driving.</p>
+                    <img src="images/waymo.png" alt="Waymo Logo">
+                    <a href="https://waymo.com/open/challenges/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Devpost Hackathons</h3>
+                    <p>Participate in various hackathons organized through Devpost, where you can showcase your skills, collaborate with others, and win prizes.</p>
+                    <img src="images/devpost.svg" alt="Devpost Logo">
+                    <a href="https://devpost.com/hackathons" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Wazoku Crowd</h3>
+                    <p>Join the Wazoku Crowd to engage in collaborative innovation challenges and contribute to solving real-world problems.</p>
+                    <img src="images/wazoku_crowd.svg" alt="Wazoku Logo">
+                    <a href="https://www.wazokucrowd.com/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>AICrowd Challenges</h3>
+                    <p>Participate in AI and machine learning competitions hosted on AICrowd, where you can test your skills and contribute to impactful projects.</p>
+                    <img src="images/aicrowd.png" alt="AICrowd Logo">
+                    <a href="https://www.aicrowd.com/challenges?ref=mlcontests" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Zindi Competitions</h3>
+                    <p>Engage with data science competitions on Zindi, focused on solving Africa's most pressing challenges through data.</p>
+                    <img src="images/zindi.png" alt="Zindi Logo">
+                    <a href="https://zindi.africa/competitions?ref=mlcontests" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Codalab Competitions</h3>
+                    <p>Participate in various challenges on Codalab, a platform for organizing competitions in machine learning and data science.</p>
+                    <img src="images/codalab.png" alt="Codalab Logo">
+                    <a href="https://codalab.lisn.upsaclay.fr/competitions/19898" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Signate Competitions</h3>
+                    <p>Join Signate to participate in data science competitions and collaborate with others to solve complex problems.</p>
+                    <img src="images/signate.png" alt="Signate Logo">
+                    <a href="https://signate.jp/?ref=mlcontests" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Think Onward Challenges</h3>
+                    <p>Participate in challenges hosted by Think Onward to innovate and solve real-world issues through collaborative efforts.</p>
+                    <img src="images/thinkonward.png" alt="Think Onward Logo">
+                    <a href="https://thinkonward.com/app/c/challenges/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Topcoder Challenges</h3>
+                    <p>Join Topcoder to participate in various challenges across different domains, including data science and development.</p>
+                    <img src="images/topcoder.svg" alt="Topcoder Logo">
+                    <a href="https://www.topcoder.com/challenges?search=Data%20Science&tracks[DS]=true&tracks[Des]=true&tracks[Dev]=true&tracks[QA]=true&types[]=CH&types[]=F2F&types[]=MM&types[]=TSK" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Hugging Face Competitions</h3>
+                    <p>Participate in machine learning competitions hosted on Hugging Face, a platform dedicated to advancing AI.</p>
+                    <img src="images/huggingface.png" alt="Hugging Face Logo">
+                    <a href="https://huggingface.co/competitions?ref=mlcontests" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>CrunchDAO</h3>
+                    <p>Join CrunchDAO to participate in live challenges and contribute to innovative solutions in data science.</p>
+                    <img src="images/crunchdao.png" alt="CrunchDAO Logo">
+                    <a href="https://www.crunchdao.com/?ref=mlcontests#livecrunches" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>DrivenData Competitions</h3>
+                    <p>Participate in data science competitions hosted by DrivenData, focusing on social impact and real-world challenges.</p>
+                    <img src="images/driverndata.svg" alt="DrivenData Logo">
+                    <a href="https://www.drivendata.org/competitions/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Grand Challenge</h3>
+                    <p>Engage in various challenges hosted by Grand Challenge, aimed at advancing medical imaging and analysis.</p>
+                    <img src="images/grandchallenge.png" alt="Grand Challenge Logo">
+                    <a href="https://grand-challenge.org/" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-item">
+                    <h3>Omdena Collaborations</h3>
+                    <p>Join Omdena to collaborate on AI projects that tackle real-world problems and drive social impact.</p>
+                    <img src="images/omdena.png" alt="Omdena Logo">
+                    <a href="https://www.omdena.com/" target="_blank">View Project</a>
+                </div>
+                 <!-- ... (your navigation menu) ... 
+                <div class="project-item">
+                    <h3>ML Contests</h3>
+                    <p>Explore various machine learning contests hosted on ML Contests, where you can challenge your skills and learn from others.</p>
+                    <img src="images/mlcontests.png" alt="ML Contests Logo">
+                    <a href="https://mlcontests.com/#list" target="_blank">View Project</a>
+                </div>
+                   -->
             </div>
         </section>
     </main>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Footprints</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes, minimal-ui">
+    <meta name="description" content="I visited 15 countries out of 257. That's 5.8% of all countries in the world! #visitedcountries #mytravels #travelmap">
+    <meta name="keywords" content="maps, travel, visited countries, charts, visual">
+    <meta property="og:title" content="Interactive Visited Places Map" />
+    <meta property="og:description" content="I visited 15 countries out of 257. That's 5.8% of all countries in the world! #visitedcountries #mytravels #travelmap" />
+    <meta property="og:image" content="https://www.amcharts.com/inspiration/images/shots/index.jpg" />
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4; /* Light background for a clean look */
+            color: #333; /* Dark text for readability */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            color: #2c3e50; /* Darker color for the heading */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        #chartdiv {
+            width: 90%;
+            max-width: 1200px; /* Limit max width for larger screens */
+            height: 70vh;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background-color: white; /* White background for the chart area */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #555; /* Slightly lighter text for footer */
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Smaller heading on mobile */
+            }
+
+            #chartdiv {
+                height: 50vh; /* Adjust chart height for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Footprints</h1>
+    <div id="chartdiv"></div>
+    
+    <script>
+        var visitedplaces_config = {
+            "map": "world",
+            "projection": "geoOrthographic",
+            "theme": "dark-green",
+            "water": 1,
+            "graticule": 1,
+            "names": 1,
+            "duration": 1000,
+            "slider": 0,
+            "autoplay": 1,
+            "autozoom": "none",
+            "data": [
+                {
+                    "colors": {},
+                    "places": []
+                },
+                {
+                    "colors": {},
+                    "places": [
+                        "IN", "MY", "ID", "JP", "TH", "VN", "PH", "QA", "AE", "SA"
+                    ],
+                    "text": "Asia",
+                    "position": {
+                        "zoomLevel": 1.5,
+                        "geoPoint": {
+                            "longitude": 83.8,
+                            "latitude": 33.3
+                        },
+                        "rotationX": -83.8,
+                        "rotationY": -33.3
+                    }
+                },
+                {
+                    "colors": {},
+                    "places": []
+                },
+                {
+                    "colors": {},
+                    "places": []
+                },
+                {
+                    "colors": {},
+                    "places": ["US"],
+                    "text": "North America",
+                    "position": {
+                        "zoomLevel": 1.6,
+                        "geoPoint": {
+                            "longitude": -100.6,
+                            "latitude": 44.4
+                        },
+                        "rotationX": 100.6,
+                        "rotationY": -44.4
+                    }
+                },
+                {
+                    "colors": {},
+                    "places": ["NL", "FR", "ES", "PT"],
+                    "text": "Europe",
+                    "position": {
+                        "zoomLevel": 2.4,
+                        "geoPoint": {
+                            "longitude": 12.1,
+                            "latitude": 53.3
+                        },
+                        "rotationX": -12.1,
+                        "rotationY": -53.3
+                    }
+                }
+            ],
+            "width": 1854,
+            "height": 744,
+            "home": "SG"
+        };
+    </script>
+    <script src="https://www.visitedplaces.com/js/common.js"></script>
+    <script src="https://www.visitedplaces.com/js/viewer.js"></script>
+    
+    <footer>
+        <p>Explore the world through my travels!</p>
+    </footer>
+</body>
+</html>

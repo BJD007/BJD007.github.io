@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "title": "Globe Trotter's Chronicles",
             "description": "Collecting passport stamps and life-changing moments across continents",
             "image": "images/travel.jpg",
-            "blogLink": "hobbies/traveling_blog.html"
+            "blogLink": "hobbies/myVisitedPlaces.html"
         },
         {
             "title": "Sonic Alchemist",

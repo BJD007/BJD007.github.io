@@ -25,7 +25,7 @@ body.dark-mode {
 }
 
 .nav {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -47,7 +47,8 @@ body.dark-mode {
     margin: 5px 10px; /* Reduced margin for mobile */
 }
 
-.nav a, .nav button {
+.nav a,
+.nav button {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
@@ -60,7 +61,8 @@ body.dark-mode {
     font-family: 'Poppins', sans-serif; /* Match font */
 }
 
-.nav a:hover, .nav button:hover {
+.nav a:hover,
+.nav button:hover {
     color: var(--primary-color);
 }
 
@@ -110,7 +112,13 @@ body.dark-mode {
     text-align: center;
 }
 
-.biography, .projects, .blogs, .timeline, .hobbies, .call-for-speakers, .call-for-papers {
+.biography,
+.projects,
+.blogs,
+.timeline,
+.hobbies,
+.call-for-speakers,
+.call-for-papers {
     padding: 100px 20px;
 }
 
@@ -129,13 +137,17 @@ body.dark-mode {
     object-fit: cover;
 }
 
-.projects-grid, .blog-grid, .hobbies-grid {
+.projects-grid,
+.blog-grid,
+.hobbies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.projects-item, .blog-post, .hobby-item {
+.projects-item,
+.blog-post,
+.hobby-item {
     background: var(--secondary-background);
     border-radius: 10px;
     overflow: hidden;
@@ -145,34 +157,45 @@ body.dark-mode {
     flex-direction: column;
 }
 
-.projects-item:hover, .blog-post:hover, .hobby-item:hover {
+.projects-item:hover,
+.blog-post:hover,
+.hobby-item:hover {
     transform: translateY(-5px);
 }
 
-.projects-item-image, .blog-post-image {
+.projects-item-image,
+.blog-post-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.projects-item-content, .blog-post-content, .hobby-item-content {
+.projects-item-content,
+.blog-post-content,
+.hobby-item-content {
     padding: 20px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-.projects-item h3, .blog-post h3, .hobby-item h3 {
+.projects-item h3,
+.blog-post h3,
+.hobby-item h3 {
     margin-top: 0;
     font-size: 1.2rem;
 }
 
-.projects-item p, .blog-post p, .hobby-item p {
+.projects-item p,
+.blog-post p,
+.hobby-item p {
     flex-grow: 1;
     margin-bottom: 15px;
 }
 
-.projects-item .cta-button, .blog-post .cta-button, .hobby-item .cta-button {
+.projects-item .cta-button,
+.blog-post .cta-button,
+.hobby-item .cta-button {
     align-self: flex-start;
 }
 
@@ -201,7 +224,9 @@ body.dark-mode {
     z-index: 1;
 }
 
-.hobby-item h3, .hobby-item p, .hobby-item .cta-button {
+.hobby-item h3,
+.hobby-item p,
+.hobby-item .cta-button {
     position: relative;
     z-index: 2;
 }
@@ -323,7 +348,9 @@ footer {
         display: block;
     }
 
-    .projects-grid, .blog-grid, .hobbies-grid {
+    .projects-grid,
+    .blog-grid,
+    .hobbies-grid {
         grid-template-columns: 1fr; /* Single column for mobile */
     }
 
@@ -370,7 +397,13 @@ footer {
         font-size: 1.5rem;
     }
 
-    .biography, .projects, .blogs, .timeline, .hobbies, .call-for-speakers, .call-for-papers {
+    .biography,
+    .projects,
+    .blogs,
+    .timeline,
+    .hobbies,
+    .call-for-speakers,
+    .call-for-papers {
         padding: 50px 10px; /* Reduced padding for very small screens */
     }
 
@@ -406,6 +439,7 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
+
 #chat-header {
     background-color: #4CAF50;
     color: white;
@@ -413,15 +447,18 @@ footer {
     cursor: pointer;
     text-align: center;
 }
+
 #chat-messages {
     flex-grow: 1;
     overflow-y: auto;
     padding: 10px;
 }
+
 #chat-input {
     display: flex;
     padding: 10px;
 }
+
 #chat-input input {
     flex-grow: 1;
     margin-right: 10px;
@@ -429,6 +466,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 #chat-button {
     position: fixed;
     bottom: 20px;
@@ -442,6 +480,7 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Brands Section Styles */
 .brands-section {
     background-color: var(--secondary-background);
     padding: 50px 20px;
@@ -460,7 +499,9 @@ footer {
 }
 
 .brand-logo {
-    height: 100px; /* Adjust the height as needed */
+    height: 100px; /* Set a fixed height for all logos */
+    width: 100px; /* Set a fixed width for all logos */
+    object-fit: contain; /* Maintain aspect ratio */
     margin: 0 20px; /* Space between logos */
 }
 

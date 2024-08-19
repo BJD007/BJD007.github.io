@@ -4,8 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dark mode toggle
     const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
     if (toggleDarkModeButton) {
+        // Set dark mode as default
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.remove('dark-mode');
+        } else {
+            document.body.classList.add('dark-mode');
+        }
+
         toggleDarkModeButton.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
+            // Save the user's preference in local storage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
         });
     } else {
         console.error("Dark mode button not found");
@@ -20,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
     // Change nav background on scroll
     window.addEventListener('scroll', function() {
         const nav = document.querySelector('.nav');
@@ -33,23 +47,21 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             "title": "GitHub Projects",
             "description": "Uncover the cutting-edge projects hosted on my GitHub, where I bring ideas to life through code and collaboration, demonstrating expertise in AI, ML, and beyond.",
-            "image" : " images/github.avif",
-            //"pdfLink": "pdfs/ai_radar_system.pdf"
+            "image": "images/github.avif",
             "pdfLink": "https://github.com/BJD007?tab=repositories"
         },
         {
             "title": "Kaggle Projects",
             "description": "Explore the high-impact projects I've tackled on Kaggle, where competition meets creativity, and data-driven solutions lead to real-world breakthroughs.",
-            "image" : " images/kaggle.webp",
+            "image": "images/kaggle.webp",
             "pdfLink": "https://www.kaggle.com/bhaskarjyotidutta"
         },
         {
             "title": "LinkedIn Projects",
             "description": "Dive into the innovative projects showcased in my LinkedIn profile, where each endeavor reflects my commitment to pushing boundaries and achieving excellence.",
-            "image" : " images/linked.webp",
+            "image": "images/linked.webp",
             "pdfLink": "https://www.linkedin.com/in/bhaskarjdutta/details/projects/"
         }
-  
     ];
 
     // Function to load projects
@@ -105,10 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
             "category": "Patents",
             "summary": "Learn about my patented innovations that are revolutionizing the automotive industry. This patent introduces a new approach to radar technology, offering unparalleled accuracy and efficiency, and setting a new standard for safety and performance in modern vehicles.",
             "image": "images/patents.jpeg",
-            "pdfLink": "https://ppubs.uspto.gov/pubwebapp/ ",
-            "pdfLink" : "https://patentscope.wipo.int/search/en/search.jsf"
+            "pdfLink": "https://ppubs.uspto.gov/pubwebapp/",
         }
-        
     ];
 
     // Function to load blog posts
@@ -125,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h3>${post.title}</h3>
                         <p class="post-meta">${post.date} | ${post.category}</p>
                         <p>${post.summary}</p>
-                        <a href="${post.pdfLink}" class="cta-button" target="_blank"> Dive-in</a>
+                        <a href="${post.pdfLink}" class="cta-button" target="_blank">Dive-in</a>
                     </div>
                 `;
                 blogGrid.appendChild(postElement);
@@ -161,13 +171,13 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             year: "December 2008",
             title: "Cent Percent Attendance Award",
-            description: "Won this pretigious and priced award for 100% attendence in the Academic Year"
+            description: "Won this prestigious and prized award for 100% attendance in the Academic Year."
         },
-        {   year: "June 2009",
+        {
+            year: "June 2009",
             title: "Internship at Worth Trust",
             description: "Gained hands-on experience in social work and community service, contributing to various projects aimed at empowering underprivileged individuals."
         },
-
         {
             year: "May 2009",
             title: "Best Hardware Project Award by Vellore Institute of Technology",
@@ -253,10 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Global Recognition: World No. 1 in AV Object Detection",
             description: "Hertzwell achieved world leadership in the NuScenes leaderboard for Object Detection in Autonomous Vehicles, solidifying its position at the forefront of AI technology."
         }
-
-
     ];
-    
 
     // Load timeline events
     const timelineContainer = document.querySelector('.timeline-container');
@@ -281,32 +288,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hobbies data
     const hobbies = [
         {
-            "title": "Body Architect: Sculpting Wellness",
-            "description": "Transforming sweat into strength, one rep at a time",
+            "title": "Fitness",
+            "description": "Dedicated to maintaining a healthy lifestyle through various fitness activities.",
             "image": "images/wellbeing.jpg",
             "blogLink": "https://www.fitbit.com/user/9GZ5NC"
         },
         {
-            "title": "Globe Trotter's Chronicles",
-            "description": "Collecting passport stamps and life-changing moments across continents",
+            "title": "Traveling",
+            "description": "Exploring new cultures and places around the world.",
             "image": "images/travel.jpg",
-            "blogLink": "hobbies/myVisitedPlaces.html"
+            "blogLink": "hobbies/traveling_blog.html"
         },
         {
-            "title": "Sonic Alchemist",
-            "description": "Turning vibrations into emotions, crafting melodies that resonate with the soul",
+            "title": "Music",
+            "description": "Expressing creativity through rhythm and music.",
             "image": "images/drumming.jpg",
             "blogLink": "hobbies/music_blog.html"
         },
         {
-            "title": "Polyglot in Progress: The Linguistic Odyssey",
-            "description": "Breaking barriers and building bridges, one language at a time",
-            "image": "images/polyglot.jpg",
+            "title": "Language Learning",
+            "description": "Passionate about learning new languages and exploring different cultures.",
+            "image": "images/languagelearning.svg",
             "blogLink": "https://www.duolingo.com/profile/Polyglot_007"
         },
         {
-            "title": "Literary Voyager: A Biblio-Adventure",
-            "description": "Exploring worlds, one page at a time - from bestsellers to hidden gems",
+            "title": "Book Reading",
+            "description": "Passionate about reading everything under the sun",
             "image": "images/book-reading.jpg",
             "blogLink": "https://www.goodreads.com/user/show/168320684-bhaskar-jyoti"
         }
@@ -337,6 +344,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load hobbies on main page
     loadHobbies('hobbies-grid');
-}
-);
-
+});

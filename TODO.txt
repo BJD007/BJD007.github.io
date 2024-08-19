@@ -1,0 +1,3 @@
+1. The logos of the brands need to formatted to same size
+2. The all-projects sytle is not same as the index projects sytle
+3. The whole website is not mobile phone viewable.

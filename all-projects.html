@@ -15,8 +15,45 @@
             color: #333;
         }
 
+
         .nav {
-            /* Add your navigation styles here */
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        .nav li {
+            margin: 5px 10px;
+        }
+
+        .nav a, .nav button {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 300;
+            transition: color 0.3s;
+            padding: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav a:hover, .nav button:hover {
+            color: var(--primary-color);
         }
 
         .projects {

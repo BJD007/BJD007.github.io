@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "category": "Conferences",
             "summary": "Explore my featured presentations from leading conferences, where I share groundbreaking insights into computer vision and robotics. This section highlights key moments from global platforms, showcasing my role in driving forward the next generation of intelligent systems.",
             "image": "images/conferences.jpg",
-            "pdfLink": "hobbies/conferences.html"
+            "pdfLink": "conferences.html"
         },
         {
             "title": "Patents",

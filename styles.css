@@ -24,9 +24,16 @@ body.dark-mode {
     --hobby-background: #37474f;
 }
 
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
 .nav {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
+    padding: 10px 0; /* Reduced padding for mobile */
     position: fixed;
     width: 100%;
     top: 0;
@@ -73,21 +80,21 @@ body.dark-mode {
     justify-content: center;
     text-align: center;
     background-color: var(--secondary-background);
+    padding: 0 20px; /* Added padding for mobile */
 }
 
 .hero-content {
     max-width: 800px;
-    padding: 0 20px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 3rem; /* Adjusted for better scaling */
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Adjusted for better scaling */
     margin-bottom: 2rem;
 }
 
@@ -107,7 +114,7 @@ body.dark-mode {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Adjusted for better scaling */
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -119,7 +126,7 @@ body.dark-mode {
 .hobbies,
 .call-for-speakers,
 .call-for-papers {
-    padding: 100px 20px;
+    padding: 80px 20px; /* Reduced padding for mobile */
 }
 
 .bio-content {
@@ -129,11 +136,12 @@ body.dark-mode {
 }
 
 .bio-image {
-    float: left;
-    margin-right: 20px;
+    float: none; /* Reset float for mobile */
+    margin: 0 auto 20px;
+    display: block;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Adjusted for mobile */
+    height: 150px; /* Adjusted for mobile */
     object-fit: cover;
 }
 
@@ -316,9 +324,14 @@ footer {
     background-color: var(--secondary-background);
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     body {
         font-size: 14px; /* Slightly smaller base font size for mobile */
+    }
+
+    .nav {
+        padding: 10px 0; /* Adjusted padding */
     }
 
     .nav ul {
@@ -331,21 +344,21 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Adjusted for better scaling */
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 1rem; /* Adjusted for better scaling */
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Adjusted for better scaling */
     }
 
     .bio-image {
-        float: none;
-        margin: 0 auto 20px;
-        display: block;
+        margin: 0 auto 20px; /* Centered image */
+        width: 150px; /* Adjusted for mobile */
+        height: 150px; /* Adjusted for mobile */
     }
 
     .projects-grid,
@@ -355,26 +368,26 @@ footer {
     }
 
     .timeline-container::after {
-        left: 31px;
+        left: 31px; /* Adjusted for mobile */
     }
 
     .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-        left: 0;
+        width: 100%; /* Full width for mobile */
+        padding-left: 20px; /* Adjusted padding */
+        padding-right: 20px; /* Adjusted padding */
+        left: 0; /* Reset left positioning */
     }
 
     .timeline-item::after {
-        left: 15px;
+        left: 15px; /* Adjusted dot position */
     }
 
     .timeline-item:nth-child(even)::after {
-        left: 15px;
+        left: 15px; /* Adjusted dot position for even items */
     }
 
     .timeline-content {
-        padding: 15px 20px;
+        padding: 15px 20px; /* Adjusted padding */
     }
 
     .cta-button {
@@ -386,15 +399,15 @@ footer {
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem; /* Adjusted for smaller screens */
     }
 
     .hero p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Adjusted for smaller screens */
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Adjusted for smaller screens */
     }
 
     .biography,
@@ -408,19 +421,20 @@ footer {
     }
 
     .timeline-container::after {
-        left: 21px;
+        left: 21px; /* Adjusted for mobile */
     }
 
     .timeline-item {
-        padding-left: 50px;
+        padding-left: 10px; /* Further reduced padding */
+        padding-right: 10px; /* Further reduced padding */
     }
 
     .timeline-item::after {
-        left: 5px;
+        left: 5px; /* Adjusted dot position */
     }
 
     .timeline-item:nth-child(even)::after {
-        left: 5px;
+        left: 5px; /* Adjusted dot position for even items */
     }
 }
 

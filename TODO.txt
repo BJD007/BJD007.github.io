@@ -1,4 +1,6 @@
 1. The logos of the brands need to formatted to same sizes
 2. The all-projects sytle is not same as the index projects sytle
 3. The whole website is not mobile phone viewable.
-4. Retify the conferences.html page with better stylings and 
+4. Retify the conferences.html page with better stylings
+5. Add bamboo HR for hiring for a rolling basis jobs OR
+Add google form sheet to add details for the job application 

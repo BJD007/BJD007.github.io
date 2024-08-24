@@ -324,6 +324,78 @@ footer {
     background-color: var(--secondary-background);
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly smaller base font size for mobile */
+    }
+
+    .nav {
+        padding: 10px 0; /* Adjusted padding */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Adjusted for better scaling */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjusted for better scaling */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Adjusted for better scaling */
+    }
+
+    .bio-image {
+        margin: 0 auto 20px; /* Centered image */
+        width: 150px; /* Adjusted for mobile */
+        height: 150px; /* Adjusted for mobile */
+    }
+
+    .projects-grid,
+    .blog-grid,
+    .hobbies-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .timeline-container::after {
+        left: 31px; /* Adjusted for mobile */
+    }
+
+    .timeline-item {
+        width: 100%; /* Full width for mobile */
+        padding-left: 20px; /* Adjusted padding */
+        padding-right: 20px; /* Adjusted padding */
+        left: 0; /* Reset left positioning */
+    }
+
+    .timeline-item::after {
+        left: 15px; /* Adjusted dot position */
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: 15px; /* Adjusted dot position for even items */
+    }
+
+    .timeline-content {
+        padding: 15px 20px; /* Adjusted padding */
+    }
+
+    .cta-button {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
 
 @media (max-width: 480px) {
     .hero h1 {
@@ -362,7 +434,7 @@ footer {
     }
 
     .timeline-item:nth-child(even)::after {
-        left: -193px; /* Adjusted dot position for even items */
+        left: 5px; /* Adjusted dot position for even items */
     }
 }
 

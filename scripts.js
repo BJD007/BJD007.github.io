@@ -262,7 +262,13 @@ document.addEventListener('DOMContentLoaded', function() {
             year: "March 2024",
             title: "Global Recognition: World No. 1 in AV Object Detection",
             description: "Hertzwell achieved world leadership in the NuScenes leaderboard for Object Detection in Autonomous Vehicles, solidifying its position at the forefront of AI technology."
+        },
+        {
+            year: "July 2025",
+            title: "Crowning Achievement: PhD Completed with Highest Honors",
+            description: "Successfully completed PhD in Artificial Intelligence from Bircham International University, graduating with GPA 4.0 (Suma Cum Laude). This milestone reflects a relentless pursuit of excellence in AI, AGI and ASI research."
         }
+
     ];
 
     // Load timeline events

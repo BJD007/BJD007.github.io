@@ -1,36 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("Script is running");
-
-    // Dark mode toggle
-    const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
-    if (toggleDarkModeButton) {
-        // Set dark mode as default
-        if (localStorage.getItem('theme') === 'light') {
-            document.body.classList.remove('dark-mode');
-        } else {
-            document.body.classList.add('dark-mode');
-        }
-
-        toggleDarkModeButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            // Save the user's preference in local storage
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    } else {
-        console.error("Dark mode button not found");
-    }
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#') return;
+            const target = document.querySelector(href);
+            if (!target) return;
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            target.scrollIntoView({ behavior: 'smooth' });
         });
     });
 

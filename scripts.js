@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "category": "Publications",
             "summary": "Discover my latest contributions to various profession organizations, where cutting-edge research meets real-world impact. These publications showcase my work in pushing the boundaries of AI, ML, and radar technologies, reflecting a deep commitment to innovation and excellence.",
             "image": "images/publications.jpeg",
-            "pdfLink": "https://www.linkedin.com/in/bhaskarjdutta/details/publications/"
+            "pdfLink": "https://scholar.google.com/citations?user=QMYvKIIAAAAJ&hl=en"
         },
         {
             "title": "Conferences",

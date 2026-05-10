@@ -96,6 +96,7 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -753,15 +754,33 @@ footer p {
     .brand-logo { height: 56px; margin: 0 22px; }
 }
 
+@media (max-width: 560px) {
+    .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .hero-ctas .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 480px) {
-    .hero { padding: 110px 18px 70px; }
+    .hero { padding: 110px 18px 80px; }
+    .hero-content { gap: 36px; }
     .hero-eyebrow { font-size: 12px; padding: 6px 12px; }
-    .hero-tagline { font-size: 0.95rem; }
-    .btn { padding: 11px 18px; font-size: 14px; }
+    .hero h1 { letter-spacing: -0.03em; }
+    .hero-tagline { font-size: 0.95rem; line-height: 1.6; }
+    .btn { padding: 12px 18px; font-size: 14px; }
     .biography, .projects, .blogs, .hobbies { padding: 60px 16px; }
+    .bio-content { font-size: 1rem; }
     .section-title { margin-bottom: 40px; }
     .timeline-content { padding: 16px 18px; }
     .portrait-frame { max-width: 220px; }
+    .hero-scroll { display: none; }
+    .brand-logo { height: 48px; margin: 0 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

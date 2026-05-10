@@ -15,6 +15,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Scroll reveal — fade-in-up sections as they enter the viewport
+    const revealTargets = document.querySelectorAll('.section-title, .bio-content, .projects-item, .blog-post, .hobby-item, .timeline-item, .brands-marquee');
+    revealTargets.forEach(el => el.classList.add('reveal'));
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        revealTargets.forEach(el => io.observe(el));
+    } else {
+        revealTargets.forEach(el => el.classList.add('visible'));
+    }
+
     // Change nav background on scroll
     window.addEventListener('scroll', function() {
         const nav = document.querySelector('.nav');

@@ -20,7 +20,7 @@
     <meta name="twitter:image" content="https://www.bhaskarjyotidutta.com/images/bhaskar.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF2FREBMHR"></script>
     <script>
@@ -44,23 +44,37 @@
     </nav>
 
     <header class="hero" id="home">
-        <div class="hero-content">
-            <h1>Bhaskar Jyoti Dutta</h1>
-            <p>Empowering Innovation Through AI and Robotics</p>
-            <a href="#biography" class="cta-button">Learn More</a>
-            <a href="https://calendly.com/bhaskarjyotidutta/30min" target="_blank" rel="noopener" class="cta-button">Book a Meeting</a>
-            <a href="https://forms.gle/skQrPGLxE3sVDqSXA" target="_blank" rel="noopener" class="cta-button">Join My Talent Pool</a>
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
         </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-eyebrow"><span class="status-dot"></span>Co-founder &amp; Director at Hertzwell</p>
+                <h1>Bhaskar Jyoti Dutta</h1>
+                <p class="hero-tagline">Robotics + AI researcher and founder. Building intelligent radar perception systems at <strong>Hertzwell</strong> and <strong>RF Foundation Models</strong> for universal wireless intelligence. Interested in <strong>AI safety</strong>, <strong>mutual interpretability</strong>, and what it means for embodied systems to understand themselves.</p>
+                <div class="hero-ctas">
+                    <a href="https://calendly.com/bhaskarjyotidutta/30min" target="_blank" rel="noopener" class="btn btn-primary">Book a meeting</a>
+                    <a href="#biography" class="btn btn-ghost">Learn more</a>
+                    <a href="https://forms.gle/skQrPGLxE3sVDqSXA" target="_blank" rel="noopener" class="btn btn-ghost">Join talent pool</a>
+                </div>
+            </div>
+            <div class="hero-portrait">
+                <div class="portrait-frame">
+                    <img src="images/bhaskar_profile.png" alt="Bhaskar Jyoti Dutta" class="portrait-img" width="400" height="500" onerror="this.onerror=null;this.src='images/bhaskar.jpg';">
+                </div>
+            </div>
+        </div>
+        <a href="#biography" class="hero-scroll" aria-label="Scroll to biography"><span></span></a>
     </header>
 
     <main>
         <section class="biography" id="biography">
             <h2 class="section-title">Biography</h2>
             <div class="bio-content">
-                <img src="images/bhaskar.jpg" alt="Bhaskar Jyoti Dutta" class="bio-image" width="150" height="150">
-                <p>Bhaskar Jyoti Dutta is a dynamic leader in the fields of artificial intelligence and robotics, renowned for his innovative contributions to autonomous systems and radar technology. As the Co-founder and CTO of Hertzwell, Bhaskar has successfully led the development of cutting-edge AI solutions, focusing on enhancing object detection and perception through advanced radar signal processing and deep learning algorithms.</p>
-                <p>With a strong educational background, Bhaskar holds a PhD in Artificial Intelligence and a Master's degree in Mechatronics from the National University of Singapore. He combines deep theoretical insight with hands-on experience, having played pivotal roles in organizations like Infinium Robotics, where he was instrumental in delivering groundbreaking projects such as the world's first UAS Autonomous Waiter and the world's first UAS Warehouse Inventory Scanner.</p>
-                <p>Bhaskar's interests extend beyond technology; he is passionate about fitness, music, and content creation. He actively engages in language learning, travelling, swimming, and drumming, and enjoys sharing insights through various social media platforms.</p>
+                <p>Bhaskar Jyoti Dutta is a founder, researcher, and engineer at the intersection of robotics, AI, and perception systems. Co-founder and Director of <strong>Hertzwell</strong>, he leads the development of intelligent millimeter-wave radar systems for autonomous vehicles and border security, combining advanced signal processing with deep learning for real-time object detection and occupancy estimation.</p>
+                <p>His research spans <strong>AI safety</strong>, <strong>mutual interpretability</strong> between systems, and <strong>RF Foundation Models</strong>—universal models trained on raw wireless data for hardware-agnostic perception across radar, WiFi, and sensing domains. He holds a PhD in Artificial Intelligence and a Master's in Mechatronics from the National University of Singapore, and is a published researcher in AI ethics, ASI risk taxonomy, and emergent intelligence.</p>
+                <p>Earlier, Bhaskar contributed to cutting-edge robotics projects at <strong>Infinium Robotics</strong>, including autonomous UAS systems for logistics. Based in Singapore, he is passionate about embodied AI, edge computing, and what it means for perception systems to understand themselves.</p>
             </div>
         </section>
 

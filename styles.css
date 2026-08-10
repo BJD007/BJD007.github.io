@@ -668,6 +668,16 @@ body {
     opacity: 1;
 }
 
+/* Logos supplied as dark artwork on a transparent background would disappear
+   against --bg-soft. Give them the same light backing the other logos carry
+   baked into their own images. */
+.brand-logo.on-light {
+    background: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 @keyframes scroll {
     from { transform: translateX(0); }
     to   { transform: translateX(-50%); }

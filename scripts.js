@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             year: "July 2025",
             title: "Crowning Achievement: PhD Completed with Highest Honors",
-            description: "Successfully completed PhD in Artificial Intelligence from Bircham International University, graduating with GPA 4.0 (Suma Cum Laude). This milestone reflects a relentless pursuit of excellence in AI, AGI and ASI research."
+            description: "Successfully completed PhD in Artificial Intelligence from Bircham International University, graduating with GPA 4.0 (Summa Cum Laude). This milestone reflects a relentless pursuit of excellence in AI, AGI and ASI research."
         }
 
     ];
